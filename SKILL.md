@@ -1,5 +1,5 @@
 ---
-name: presentation-review
+name: presentation-deep-review
 description: 对已有 PPT/PPTX、PDF、逐页截图、大纲或讲稿进行系统审查。在用户要求评审、检查或诊断演示文稿并输出问题时使用；先咨询受众、使用场景、时长与审查范围，再统一准备证据，强制检查跨页母版、布局、Logo、标题和字体系统，按综合或专项范围调度八个维度。若用户声明涉外、对外发布、客户交流、外部共享或保密要求，还检查正文、图表、备注、隐藏内容和元数据中的敏感信息是否适合对外展示；最终按中文序号维度输出有证据的问题，并标注必要的待确认和未评估范围。
 ---
 
@@ -142,7 +142,7 @@ description: 对已有 PPT/PPTX、PDF、逐页截图、大纲或讲稿进行系�
 对 PPTX 优先运行 [scripts/build_evidence.py](scripts/build_evidence.py) 生成 `evidence.json`、`system-matrix.json`、`review-index.json` 和 `slide_text.txt`，再补充一次全页渲染/接触表。脚本默认递归解析组内对象，并纳入布局/母版形状、Logo/chrome 与标题的容差离群统计；`review-index.json` 是不含页面正文的轻量导航索引，记录输入文件哈希、可复用缓存键、异常页、隐藏页/对象和需要重点定位的对象；`geometry_overflow_candidates` 只表示对象几何越界，不等同于文本溢出。示例：
 
 ```bash
-SKILL_DIR=/path/to/presentation-review
+SKILL_DIR=/path/to/presentation-deep-review
 python3 "$SKILL_DIR/scripts/build_evidence.py" input.pptx evidence/
 ```
 

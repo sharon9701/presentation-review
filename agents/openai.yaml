@@ -1,7 +1,7 @@
 interface:
   display_name: "PPT Review"
   short_description: "按八个维度审查 PPT，并核对母版、Logo、标题系统与交付质量"
-  default_prompt: "使用 $presentation-review 审查这份 PPT：若背景未完整提供，先询问受众、使用场景、时长、审查范围及可选约束，并展示八个维度的简短说明；从材料推断沟通任务，不主动询问目的；确认后先做跨页母版/Logo/标题回归，再按选定范围列出有证据的问题。"
+  default_prompt: "使用 $presentation-deep-review 审查这份 PPT：若背景未完整提供，先询问受众、使用场景、时长、审查范围及可选约束，并展示八个维度的简短说明；从材料推断沟通任务，不主动询问目的；确认后先做跨页母版/Logo/标题回归，再按选定范围列出有证据的问题。"
 
 policy:
   allow_implicit_invocation: true

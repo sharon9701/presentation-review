@@ -877,7 +877,7 @@ def build_review_index(
             )
 
     cache_key = (
-        f"presentation-review:{SCHEMA_VERSION}:{input_sha256}:"
+        f"presentation-deep-review:{SCHEMA_VERSION}:{input_sha256}:"
         f"drift={drift_threshold:.6g}:inherited={'on' if inherited_enabled else 'off'}"
     )
     return {

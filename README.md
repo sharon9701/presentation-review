@@ -1,6 +1,19 @@
 # PPT全维度深度审查
 
-`presentation-review` 是一个面向真实工作场景的通用型 PPT/PPTX 深度审查技能。它不只检查错别字和排版，而是默认逐页检查一份演示文稿是否适合目标受众、使用场景和交付环境，并将问题定位到具体页码、对象、文字或文件部件。
+它会沿着一条阅读因果链，审查整套 PPT：
+
+**目标与任务 → 内容与证据 → 论证与页面链路 → 页面主旨与文字 → 视觉语义与版式 → 可读性、密度与节奏 → 中文表达与 AI 味 → 文件工程、可访问性与交付**
+
+它会看：
+
+- 这份 PPT 到底给谁看，要让对方理解、决定，还是行动；
+- 数字有没有对象、时间、单位、统计口径和来源；
+- 图表有没有把比较、流程、层级和因果关系画对；
+- 观众能不能在 5 秒内找到这一页的主旨；
+- 母版、布局、Logo、标题、字体和页脚有没有跨页漂移；
+- 有没有溢出、重叠、字体替换、链接失效、不可编辑对象和文件交付风险。
+
+并且会告诉你：哪里不成立，为什么，以及怎么改。
 
 ## 核心优势
 
@@ -16,7 +29,7 @@
 将本目录作为 Codex skill 使用，或在 Codex 中直接调用：
 
 ```text
-$presentation-review 审查这份 PPT
+$presentation-deep-review 审查这份 PPT
 ```
 
 开始审查前，技能会询问：
@@ -78,7 +91,7 @@ python3 scripts/build_evidence.py input.pptx evidence/
 ## 目录结构
 
 ```text
-presentation-review/
+presentation-deep-review/
 ├── SKILL.md                         # 总控工作流
 ├── agents/openai.yaml               # Codex 界面与触发配置
 ├── dimensions/                      # 八个审查维度的详细规则
