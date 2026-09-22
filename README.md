@@ -106,7 +106,7 @@ presentation-deep-review/
 ## 下载与版本
 
 - 仓库：[github.com/sharon9701/presentation-review](https://github.com/sharon9701/presentation-review)
-- 当前版本：[v1.7 Release](https://github.com/sharon9701/presentation-review/releases/tag/v1.7)
-- 技能包：[presentation-review-v1.7.zip](https://github.com/sharon9701/presentation-review/releases/download/v1.7/presentation-review-v1.7.zip)
+- 当前版本：[v1.7.1 Release](https://github.com/sharon9701/presentation-review/releases/tag/v1.7.1)
+- 技能包：[presentation-deep-review-v1.7.1.zip](https://github.com/sharon9701/presentation-review/releases/download/v1.7.1/presentation-deep-review-v1.7.1.zip)
 
 本技能负责审查和提出问题，不直接修改原始 PPT；是否采纳建议、是否公开敏感信息，仍由文件负责人和相应的业务、法务或保密责任人确认。
